@@ -7,7 +7,9 @@ from train import train
 
 
 def main():
+    print("Starting to download MNIST dataset...")
     train_images, train_labels, test_images, test_labels = load_data()
+    print("... dataset MNIST downloaded !")
 
     # Initialize model and optimizer
     key = random.PRNGKey(0)
